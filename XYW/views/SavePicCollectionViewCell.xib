@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" reuseIdentifier="SavePicCollectionViewCell" id="gTV-IL-0wX" customClass="SavePicCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="68" translatesAutoresizingMaskIntoConstraints="NO" id="vtj-py-vIh">
+                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="vtj-py-vIh" secondAttribute="trailing" id="Fmy-10-ZCq"/>
+                <constraint firstAttribute="bottom" secondItem="vtj-py-vIh" secondAttribute="bottom" id="TY1-OV-0ON"/>
+                <constraint firstItem="vtj-py-vIh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="d3x-S6-RKb"/>
+                <constraint firstItem="vtj-py-vIh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="qNy-Kf-5r9"/>
+            </constraints>
+            <size key="customSize" width="78" height="68"/>
+            <connections>
+                <outlet property="imgView" destination="vtj-py-vIh" id="3AM-6X-00y"/>
+            </connections>
+            <point key="canvasLocation" x="203" y="347"/>
+        </collectionViewCell>
+    </objects>
+</document>

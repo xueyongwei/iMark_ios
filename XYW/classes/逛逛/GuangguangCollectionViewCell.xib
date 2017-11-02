@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GuangguangCollectionViewCell" id="gTV-IL-0wX" customClass="GuangguangCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="162" height="215"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="162" height="215"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QSR-Bg-y4o">
+                        <rect key="frame" x="0.0" y="0.0" width="162" height="215"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="QSR-Bg-y4o" secondAttribute="bottom" id="0KH-i0-9VZ"/>
+                <constraint firstAttribute="trailing" secondItem="QSR-Bg-y4o" secondAttribute="trailing" id="FOx-8z-Vmv"/>
+                <constraint firstItem="QSR-Bg-y4o" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="THA-R9-GNy"/>
+                <constraint firstItem="QSR-Bg-y4o" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="zFS-MG-wHV"/>
+            </constraints>
+            <size key="customSize" width="162" height="215"/>
+            <connections>
+                <outlet property="imageView" destination="QSR-Bg-y4o" id="xas-do-m0d"/>
+            </connections>
+            <point key="canvasLocation" x="90" y="136.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

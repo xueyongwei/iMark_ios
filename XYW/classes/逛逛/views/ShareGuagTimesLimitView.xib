@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShareViewController"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1GP-Vx-vIy">
+                    <rect key="frame" x="57" y="232.5" width="260" height="202"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZEM-2B-J2W">
+                            <rect key="frame" x="35" y="50" width="190" height="38.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="190" id="d8J-pT-GPk"/>
+                            </constraints>
+                            <string key="text">每天仅可分享至逛逛三次
+明天再来哦～</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lch-2U-peP">
+                            <rect key="frame" x="30" y="137" width="200" height="55"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="UrS-jt-DEl"/>
+                            </constraints>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="-9" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="好的" backgroundImage="homePageStartBg">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onShareAlertOkClick:" destination="-1" eventType="touchUpInside" id="j22-qi-2K9"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="202" id="3zo-ZP-Rfu"/>
+                        <constraint firstItem="ZEM-2B-J2W" firstAttribute="centerX" secondItem="1GP-Vx-vIy" secondAttribute="centerX" id="FHj-rM-c4H"/>
+                        <constraint firstItem="ZEM-2B-J2W" firstAttribute="top" secondItem="1GP-Vx-vIy" secondAttribute="top" constant="50" id="Fob-uI-YyH"/>
+                        <constraint firstItem="Lch-2U-peP" firstAttribute="leading" secondItem="1GP-Vx-vIy" secondAttribute="leading" constant="30" id="IfJ-gR-myi"/>
+                        <constraint firstAttribute="trailing" secondItem="Lch-2U-peP" secondAttribute="trailing" constant="30" id="LlR-2a-koK"/>
+                        <constraint firstAttribute="width" constant="260" id="VkV-p2-Jv6"/>
+                        <constraint firstAttribute="bottom" secondItem="Lch-2U-peP" secondAttribute="bottom" constant="10" id="mdt-2A-cVH"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="1GP-Vx-vIy" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Jcb-Ix-bR4"/>
+                <constraint firstItem="1GP-Vx-vIy" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="WGi-LB-u96"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="homePageStartBg" width="321" height="62"/>
+    </resources>
+</document>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WaterCollectionViewCell" id="gTV-IL-0wX" customClass="WaterCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OYV-jr-FyU">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zLc-Am-3Yl">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="zLc-Am-3Yl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="5TK-dV-Pa0"/>
+                <constraint firstAttribute="bottom" secondItem="zLc-Am-3Yl" secondAttribute="bottom" id="Ces-iL-DsF"/>
+                <constraint firstAttribute="trailing" secondItem="OYV-jr-FyU" secondAttribute="trailing" id="HTf-MT-DXy"/>
+                <constraint firstItem="OYV-jr-FyU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="RlI-b5-Tn7"/>
+                <constraint firstAttribute="trailing" secondItem="zLc-Am-3Yl" secondAttribute="trailing" id="ZS0-In-mRJ"/>
+                <constraint firstItem="zLc-Am-3Yl" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="cuB-9L-FKF"/>
+                <constraint firstAttribute="bottom" secondItem="OYV-jr-FyU" secondAttribute="bottom" id="pqU-43-0CF"/>
+                <constraint firstItem="OYV-jr-FyU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="sta-aH-8d0"/>
+            </constraints>
+            <connections>
+                <outlet property="bgImgView" destination="OYV-jr-FyU" id="p89-vV-zsL"/>
+                <outlet property="imgView" destination="zLc-Am-3Yl" id="XvX-Ll-2Sh"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>

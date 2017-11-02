@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditerViewController"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SelectWaterTableView">
+            <rect key="frame" x="0.0" y="0.0" width="299" height="175"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I70-rF-qNA" customClass="XhorTableView">
+                    <rect key="frame" x="0.0" y="124" width="255" height="50"/>
+                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="p1k-ri-0cU"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="yYH-PZ-jjR">
+                    <rect key="frame" x="0.0" y="5" width="299" height="119"/>
+                    <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="5" minimumInteritemSpacing="5" id="22R-HH-Xxh">
+                        <size key="itemSize" width="80" height="80"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vph-Na-p47" customClass="XYWButton">
+                    <rect key="frame" x="0.0" y="125" width="0.0" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" id="1Na-89-NRM"/>
+                        <constraint firstAttribute="height" constant="50" id="eSM-Ax-3oW"/>
+                    </constraints>
+                    <state key="normal" image="editCloseItem"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bre-Xx-vTU" customClass="XYWButton">
+                    <rect key="frame" x="255" y="125" width="44" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="D2E-q7-Akk"/>
+                        <constraint firstAttribute="width" constant="44" id="q5v-wJ-h9G"/>
+                    </constraints>
+                    <state key="normal" image="editSureItem"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="I70-rF-qNA" secondAttribute="bottom" constant="1" id="8sP-El-BFp"/>
+                <constraint firstItem="bre-Xx-vTU" firstAttribute="leading" secondItem="I70-rF-qNA" secondAttribute="trailing" id="JHo-o3-VVG"/>
+                <constraint firstItem="I70-rF-qNA" firstAttribute="top" secondItem="yYH-PZ-jjR" secondAttribute="bottom" id="KdL-dw-tHm"/>
+                <constraint firstItem="yYH-PZ-jjR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="UI3-yh-8fc"/>
+                <constraint firstItem="yYH-PZ-jjR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="X2u-aT-vEJ"/>
+                <constraint firstAttribute="trailing" secondItem="bre-Xx-vTU" secondAttribute="trailing" id="Zul-kO-6cE"/>
+                <constraint firstAttribute="bottom" secondItem="Vph-Na-p47" secondAttribute="bottom" id="beI-88-PbG"/>
+                <constraint firstItem="Vph-Na-p47" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hqK-C8-UF8"/>
+                <constraint firstAttribute="bottom" secondItem="bre-Xx-vTU" secondAttribute="bottom" id="pUl-SB-B7M"/>
+                <constraint firstAttribute="trailing" secondItem="yYH-PZ-jjR" secondAttribute="trailing" id="qSu-09-q6l"/>
+                <constraint firstItem="I70-rF-qNA" firstAttribute="leading" secondItem="Vph-Na-p47" secondAttribute="trailing" id="zkD-sz-E2j"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="XtableView" destination="I70-rF-qNA" id="kIn-gu-3WF"/>
+                <outlet property="collection" destination="yYH-PZ-jjR" id="xyF-WJ-j4n"/>
+                <outlet property="onBtn" destination="bre-Xx-vTU" id="QgQ-EH-grp"/>
+            </connections>
+            <point key="canvasLocation" x="448.5" y="185.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="editCloseItem" width="40" height="40"/>
+        <image name="editSureItem" width="40" height="40"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>
